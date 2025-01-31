@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #007acc;
+    --secondary-color: #fff;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: var(--text-color);
+background-color: var(--background-color);
+min-height: 100vh;
+}
+
+h1, h2, h3 {
+margin: 0.5em 0;
+}
+
+a {
+color: var(--primary-color);
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 1em;
+}
+
+/* Header */
+header {
+background-color: var(--primary-color);
+color: var(--secondary-color);
+padding: 1em 0;
+}
+
+header .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header nav {
+display: flex;
+gap: 1em;
+}
+
+header nav a {
+color: var(--secondary-color);
+font-weight: bold;
+}
+
+/* Main Section */
+main {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2em;
+padding: 2em 0;
+}
+
+.card {
+background: var(--secondary-color);
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 1em;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s;
+}
+
+.card:hover {
+transform: scale(1.05);
+}
+
+.card h3 {
+color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+background-color: #333;
+color: var(--secondary-color);
+text-align: center;
+padding: 1em 0;
+min-height: 94px;
+}
+
+footer p {
+margin: 0.5em 0;
+}
+
+/* Color Picker */
+.color-picker {
+margin: 1em 0;
+text-align: center;
+}
+
+.color-picker label {
+margin-right: 0.5em;
+font-weight: bold;
+}
+
+.color-picker input {
+margin: 0 0.5em;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
